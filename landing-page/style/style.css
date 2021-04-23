@@ -1,5 +1,8 @@
 /* Extra small devices (phones, 64px and up) */
 @media only screen and (min-width: 64px) {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     margin: 0;
     font-family: "Work Sans", sans-serif;
@@ -64,12 +67,12 @@
   }
 
   .video {
-    margin-top: 64px;
+    padding-top: 64px;
     padding: 10% 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../assets/img/video-bg.png");
+    background-image: url("https://github.com/fikriyusrihan/responsive-web-design-fcc/blob/master/landing-page/assets/img/video-bg.png?raw=true");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -78,8 +81,8 @@
   }
 
   .newsletter {
-    margin-top: 64px;
-    margin-bottom: 92px;
+    padding-top: 64px;
+    padding-bottom: 92px;
   }
   .newsletter h1 {
     text-align: center;
@@ -125,11 +128,11 @@
   }
 
   footer {
-      text-align: center;
-      padding: 8px;
-      font-size: 0.7em;
-      color: white;
-      background-color: black;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.7em;
+    color: white;
+    background-color: black;
   }
 
   @keyframes btn-hover {
@@ -170,4 +173,42 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  header {
+    padding: 0 10%;
+    flex-direction: row;
+  }
+  header .logo {
+    display: inline;
+  }
+  header img {
+    margin: 10px 0;
+  }
+  header .menu {
+    margin-left: 32px;
+  }
+
+  .jumbotron img {
+    margin-top: 68px;
+    max-width: 100%;
+  }
+
+  .main-title {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
+  .main-title h1 {
+    font-size: 2em;
+  }
+  .main-title p {
+    font-size: 1em;
+  }
+
+  .video iframe {
+    width: 60%;
+  }
+
+  .newsletter input {
+    margin-top: 32px !important;
+    width: 500px !important;
+  }
 }
