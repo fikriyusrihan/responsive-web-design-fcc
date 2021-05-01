@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotlin Documentation</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    <nav id="navbar">
+        <header><img src="assets/img/kotlin-logo.png" alt="Kotlin logo"> Kotlin</header>
+        <ul>
+            <li><a href="#Multiplatform_Programming" class="nav-link">Multiplatform Programming</a></li>
+            <li><a href="#Kotlin_for_Server_Side" class="nav-link">Kotlin for Server Side</a></li>
+            <li><a href="#Kotlin_for_Android" class="nav-link">Kotlin for Android</a></li>
+            <li><a href="#Kotlin_for_Javascript" class="nav-link">Kotlin for Javascript</a></li>
+            <li><a href="#Kotlin_for_competitive_programming" class="nav-link">Kotlin for competitive programming</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <div class="last-modified">
+            <p>Last modified: 11 February 2021</p>
+        </div>
+        <section class="main-section" id="Multiplatform_Programming">
+            <header><h1>Multiplatform Programming</h1></header>
+            <p>Support for multiplatform programming is one of Kotlin’s key benefits. It reduces time spent writing and maintaining the same code for different platforms while retaining the flexibility and benefits of native programming.</p>
+            <p>With this mechanism, a common source set defines an expected declaration, and platform source sets must provide the actual declaration that corresponds to the expected declaration. This works for most Kotlin declarations, such as functions, classes, interfaces, enumerations, properties, and annotations.</p>
+        </section>
+        <section class="main-section" id="Kotlin_for_Server_Side">
+            <header><h1>Kotlin for Server Side</h1></header>
+            <p>Kotlin is a great fit for developing server-side applications, allowing you to write concise and expressive code while maintaining full compatibility with existing Java-based technology stacks and a smooth learning curve:</p>
+
+            <ul>
+                <li><span class="bold">Expressiveness: </span>Kotlin's innovative language features, such as its support for type-safe builders and delegated properties, help build powerful and easy-to-use abstractions.</li>
+
+                <li><span class="bold">Scalability: </span>Kotlin's support for coroutines helps build server-side applications that scale to massive numbers of clients with modest hardware requirements.</li>
+
+                <li><span class="bold">Interoperability: </span>Kotlin is fully compatible with all Java-based frameworks, which lets you stay on your familiar technology stack while reaping the benefits of a more modern language.
+                </li>
+
+                <li><span class="bold">Migration: </span>Kotlin supports gradual, step by step migration of large codebases from Java to Kotlin. You can start writing new code in Kotlin while keeping older parts of your system in Java.</li>
+
+                <li><span class="bold">Tooling: </span>In addition to great IDE support in general, Kotlin offers framework-specific tooling (for example, for Spring) in the plugin for IntelliJ IDEA Ultimate.</li>
+
+                <li><span class="bold">Learning Curve: </span>For a Java developer, getting started with Kotlin is very easy. The automated Java to Kotlin converter included in the Kotlin plugin helps with the first steps. Kotlin Koans offer a guide through the key features of the language with a series of interactive exercises.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Kotlin_for_Android">
+            <header><h1>Kotlin for Android</h1></header>
+            <p>Android mobile development has been Kotlin-first since Google I/O in 2019.</p>
+            <p>Using Kotlin for Android development, you can benefit from:</p>
+            <ul>
+                <li><span class="bold">Less code combined with greater readability. </span>Spend less time writing your code and working to understand the code of others.</li>
+
+                <li><span class="bold">Mature language and environment.</span> Since its creation in 2011, Kotlin has developed continuously, not only as a language but as a whole ecosystem with robust tooling. Now it's seamlessly integrated in Android Studio and is actively used by many companies for developing Android applications.</li>
+
+                <li><span class="bold">Interoperability with Java.</span> You can use Kotlin along with the Java programming language in your applications without needing to migrate all your code to Kotlin.</li>
+
+                <li><span class="bold">Easy learning.</span> Kotlin is very easy to learn, especially for Java developers.</li>
+
+                <li><span class="bold">Big community.</span> Kotlin has great support and many contributions from the community, which is growing all over the world. According to Google, over 60% of the top 1000 apps on the Play Store use Kotlin.</li>
+
+            </ul>
+        </section>
+        <section class="main-section" id="Kotlin_for_Javascript">
+            <header><h1>Kotlin for Javascript</h1></header>
+            <p>Kotlin/JS provides the ability to transpile your Kotlin code, the Kotlin standard library, and any compatible dependencies to JavaScript. The current implementation of Kotlin/JS targets ES5.</p>
+            <p>The recommended way to use Kotlin/JS is via the <code>kotlin.js</code> and <code>kotlin.multiplatform</code> Gradle plugins. They provide a central and convenient way to set up and control Kotlin projects targeting JavaScript. This includes essential functionality such as controlling the bundling of your application, adding JavaScript dependencies directly from npm, and more. To get an overview of the available options, check out the Kotlin/JS project setup documentation.</p>
+        </section>
+        <section class="main-section" id="Kotlin_for_competitive_programming">
+            <header><h1>Kotlin for competitive programming</h1></header>
+            <p>This tutorial is designed both for competitive programmers that did not use Kotlin before and for Kotlin developers that did not participate in any competitive programming events before. It assumes the corresponding programming skills.</p>
+
+            <p>Note the use of Kotlin's null-assertion operator <code>!!</code> after the <code>readLine()</code> function call. Kotlin's readLine() function is defined to return a nullable type <code>String?</code> and returns <code>null</code> on the end of the input, which explicitly forces the developer to handle the case of missing input.</p>
+        </section>
+    </main>
+</body>
+</html>

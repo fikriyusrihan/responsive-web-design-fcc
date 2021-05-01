@@ -1,0 +1,96 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 100px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin: 0;
+  }
+  .bold {
+    font-weight: bold;
+  }
+
+  code {
+    padding: 1px;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+  }
+
+  #navbar header {
+    background-color: #27282c;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: white;
+    padding: 0.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6em;
+  }
+  #navbar header img {
+    width: 1.4em;
+    margin-right: 0.5em;
+  }
+  #navbar ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  #navbar ul li {
+    padding: 24px;
+    border: 1px solid black;
+  }
+  #navbar a {
+    text-decoration: none;
+    color: #818181;
+    display: block;
+  }
+  #navbar a:hover {
+    color: #272727;
+    text-decoration: underline;
+  }
+
+  main {
+    margin-top: 32px;
+    margin-bottom: 64px;
+    padding: 0px 16px;
+    text-align: justify;
+    line-height: 24px;
+  }
+  main .last-modified {
+    font-size: 0.8em;
+    color: #7c7c7c;
+  }
+  main .main-section header {
+    margin-top: 32px;
+    font-family: "Montserrat", sans-serif;
+  }
+  main .main-section li {
+    padding-bottom: 16px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    width: 88%;
+  }
+  #navbar {
+    height: 100%;
+    width: 18em;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    border: 2px solid #27282c;
+  }
+
+  main {
+    margin-left: 20em;
+  }
+}
